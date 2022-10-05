@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/userDashboard"
+        android:title="DASHBOARD"
+        android:icon="@drawable/dashboard"/>
+    <item
+        android:id="@+id/userNotifications"
+        android:title="NOTIFICATIONS"
+        android:icon="@drawable/notifications"/>
+</menu>

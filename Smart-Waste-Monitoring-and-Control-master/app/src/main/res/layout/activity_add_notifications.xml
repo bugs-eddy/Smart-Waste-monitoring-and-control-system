@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Administrator.AddNotifications">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_marginTop="50sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD NOTIFICATION"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_marginStart="80sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:text="TITLE"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+            <EditText
+                android:drawableLeft="@drawable/title"
+                android:id="@+id/title_add_notification"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginTop="32sp"
+                android:layout_marginLeft="32sp"
+                android:layout_marginRight="32sp"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:hint="  Title"
+                android:background="@drawable/input_design"
+                android:inputType="text"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:layout_marginStart="80sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:text="Body"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:drawableLeft="@drawable/body"
+                android:id="@+id/body_add_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32sp"
+                android:layout_marginLeft="32sp"
+                android:layout_marginRight="32sp"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:minLines="4"
+                android:maxLines="25"
+                android:hint="   Body"
+                android:background="@drawable/input_design"
+                android:inputType="text|textMultiLine"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                tools:ignore="TextFields" />
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/submit_add_notification"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_design"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:padding="15sp"
+                android:text="SUBMIT"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"
+                android:layout_marginBottom="100sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
